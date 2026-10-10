@@ -1,0 +1,14 @@
+@model List<string>
+@{
+    ViewData["Title"] = "Hjem";
+}
+
+<h1>Mine Søknader</h1>
+<p>Jeg har søkt på @Model.Count firmaer: </p>
+
+<ul>
+    @foreach (var companies in Model)
+    {
+        <li>@companies</li>
+    }
+</ul>
