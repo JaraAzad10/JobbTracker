@@ -31,6 +31,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9PbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/jaraazad/Documents/JobbTracker/Views/JobApplications/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSm9iQXBwbGljYXRpb25zL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jaraazad/Documents/JobbTracker/Views/JobApplications/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSm9iQXBwbGljYXRpb25zL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/jaraazad/Documents/JobbTracker/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

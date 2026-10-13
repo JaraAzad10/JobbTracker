@@ -16,3 +16,35 @@ nav a {
     text-decoration: none;
     color: #0066cc;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+form div {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+input,
+select,
+textarea {
+    padding: 0.4rem;
+    font: inherit;
+}
+
+span[class*="validation-error"] {
+    color: #c00;
+    font-size: 0.9rem;
+}

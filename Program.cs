@@ -1,7 +1,10 @@
+using JobbTracker.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 //Registrerer MVC-tjenestene (controllers + views)
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<IJobApplicationService, InMemoryJobApplicationService>();
 
 var app = builder.Build();
 
