@@ -53,4 +53,97 @@ public class JobApplicationsController : Controller
 
         return RedirectToAction(nameof(Index));
     }
+
+    //GET: /JobApplications/Details/5
+    [HttpGet]
+    public IActionResult Details(int id)
+    {
+        var application = _service.GetById(id);
+        if (application == null)
+        {
+            return NotFound();
+        }
+        return View(application);
+    }
+
+    //GET: /JobApplication/Edit/5
+    [HttpGet]
+    public IActionResult Edit(int id)
+    {
+        var application = _service.GetById(id);
+        if (application == null)
+        {
+            return NotFound();
+        }
+
+        var vm = new JobApplicationEditViewModel
+        {
+            Id = application.Id,
+            Company = application.Company,
+            Position = application.Position,
+            AppliedDate = application.AppliedDate,
+            Status = application.Status,
+            Notes = application.Notes,
+            Url = application.Url
+        };
+        return View(vm);
+    }
+
+    //POST: /JobApplication/Edit/5
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public IActionResult Edit(int id, JobApplicationEditViewModel vm)
+    {
+        if (id != vm.Id)
+        {
+            return BadRequest();
+        }
+        if (ModelState.IsValid)
+        {
+            return View(vm);
+        }
+
+        var application = new JobApplication
+        {
+            Id = vm.Id,
+            Company = vm.Company,
+            Position = vm.Position,
+            AppliedDate = vm.AppliedDate,
+            Status = vm.Status,
+            Notes = vm.Notes,
+            Url = vm.Url
+        };
+
+        if (!_service.Update(application))
+        {
+            return NotFound();
+        }
+
+        return RedirectToAction(nameof(Details), new { id = vm.Id });
+    }
+
+
+    //GET: /JobApplication/Delete/5 -> bekreftelsesside
+    [HttpGet]
+    public IActionResult Delete(int id)
+    {
+        var application = _service.GetById(id);
+        if (application == null)
+        {
+            return NotFound();
+        }
+        return View(application);
+    }
+
+    // POST /JobApplications/Delete/5  → selve slettingen
+    [HttpPost, ActionName("Delete")]
+    [ValidateAntiForgeryToken]
+    public IActionResult DeleteConfirmed(int id)
+    {
+        if (!_service.Delete(id))
+        {
+            return NotFound();
+        }
+        return RedirectToAction(nameof(Index));
+    }
 }

@@ -1,5 +1,6 @@
 /Users/jaraazad/Documents/JobbTracker/bin/Debug/net10.0/appsettings.Development.json
 /Users/jaraazad/Documents/JobbTracker/bin/Debug/net10.0/appsettings.json
+/Users/jaraazad/Documents/JobbTracker/bin/Debug/net10.0/JobbTracker.staticwebassets.runtime.json
 /Users/jaraazad/Documents/JobbTracker/bin/Debug/net10.0/JobbTracker.staticwebassets.endpoints.json
 /Users/jaraazad/Documents/JobbTracker/bin/Debug/net10.0/JobbTracker
 /Users/jaraazad/Documents/JobbTracker/bin/Debug/net10.0/JobbTracker.deps.json
@@ -12,10 +13,14 @@
 /Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/JobbTracker.AssemblyInfo.cs
 /Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/JobbTracker.csproj.CoreCompileInputs.cache
 /Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/JobbTracker.MvcApplicationPartsAssemblyInfo.cache
+/Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/JobbTracker.RazorAssemblyInfo.cache
+/Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/JobbTracker.RazorAssemblyInfo.cs
+/Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/JobbTracker.sourcelink.json
 /Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/rjimswa.dswa.cache.json
 /Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
 /Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
 /Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/scopedcss/bundle/JobbTracker.styles.css
+/Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/compressed/yqhukas94p-{0}-bfmmhez6l3-bfmmhez6l3.gz
 /Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/staticwebassets.build.json
 /Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/staticwebassets.build.json.cache
 /Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/staticwebassets.development.json
@@ -26,8 +31,3 @@
 /Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/JobbTracker.pdb
 /Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/JobbTracker.genruntimeconfig.cache
 /Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/ref/JobbTracker.dll
-/Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/JobbTracker.sourcelink.json
-/Users/jaraazad/Documents/JobbTracker/bin/Debug/net10.0/JobbTracker.staticwebassets.runtime.json
-/Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/JobbTracker.RazorAssemblyInfo.cache
-/Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/JobbTracker.RazorAssemblyInfo.cs
-/Users/jaraazad/Documents/JobbTracker/obj/Debug/net10.0/compressed/yqhukas94p-{0}-bfmmhez6l3-bfmmhez6l3.gz

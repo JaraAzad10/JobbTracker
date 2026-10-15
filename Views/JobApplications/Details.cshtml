@@ -1,0 +1,32 @@
+@model JobApplication
+@{
+    ViewData["Title"] = Model.Company;
+}
+
+<h1>@Model.Position hos @Model.Company</h1>
+
+<dl>
+    <dt>Søkt dato</dt>
+    <dd>@Model.AppliedDate.ToString("dd.MM.yyyy")</dd>
+
+    <dt>Status</dt>
+    <dd>@Model.Status</dd>
+
+    @if (!string.IsNullOrEmpty(Model.Url))
+    {
+        <dt>Annonse</dt>
+        <dd><a href="@Model.Url" target="_blank">@Model.Url</a></dd>
+    }
+
+    @if (!string.IsNullOrEmpty(Model.Notes))
+    {
+        <dt>Notater</dt>
+        <dd>@Model.Notes</dd>
+    }
+</dl>
+
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Rediger</a> |
+    <a asp-action="Delete" asp-route-id="@Model.Id">Slett</a> |
+    <a asp-action="Index">Tilbake til listen</a>
+</p>

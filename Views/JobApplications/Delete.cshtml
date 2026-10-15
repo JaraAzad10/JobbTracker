@@ -1,0 +1,13 @@
+@model JobApplication
+@{
+    ViewData["Title"] = "Slett søknad";
+}
+
+<h1>Slett søknad?</h1>
+
+<p>Er du sikker på at du vil slette søknaden til <strong>@Model.Position</strong> hos <strong>@Model.Company</strong>?</p>
+
+<form asp-action="Delete" asp-route-id="@Model.Id" method="post">
+    <button type="submit">Ja, slett</button>
+    <a asp-action="Details" asp-route-id="@Model.Id">Avbryt</a>
+</form>
